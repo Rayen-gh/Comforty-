@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title> Dashboard</title>
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="#" id="show-home">Acceuil</a></li>
+                <li><a href="#" id="show-products">Products</a></li>
+                <li><a href="#" id="show-analytics">Analytics</a></li>
+            </ul>
+        </aside>
+        <main class="main-content" id="main-content">
+            <div id="home" class="home">
+                <h2>Acceuil</h2>
+                <div class="stats">
+                    <div class="stat"><h3>this month income</h3><p>$5000</p></div>
+                    <div class="stat"><h3>New orders</h3><p>150</p></div>
+                    <div class="stat"><h3>New users</h3><p>50</p></div>
+                </div>
+            </div>
+
+            <div id="products" class="products" style="display:none;">
+                <h2>Product list</h2>
+                <button id="add-product-btn">Add product</button>
+                <div id="product-list" class="product-list"></div>
+            </div>
+
+            <div id="analytics" class="analytics" style="display:none;">
+                <h2>Analytics</h2>
+                <canvas id="analytics-chart" width="400" height="200"></canvas>
+            </div>
+        </main>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>

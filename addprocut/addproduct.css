@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Inter;
+}
+/* Form styling */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="number"],
+input[type="image"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        font-size: 14px;
+    }
+}
